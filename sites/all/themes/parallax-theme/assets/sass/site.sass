@@ -1,0 +1,231 @@
+
+
+body
+	+font
+	//	+bg(yellow)
+	//	background: url("../img/1.jpg")
+	//	background-size: cover
+	//	background-position: center center
+		
+.system-drupal
+	@extend %none
+	
+#content
+	+page
+	+bg($gray-light)
+	height: 400px
+
+/*level-1*/
+.level-1
+	width: 100%
+	height: 100%
+	min-height: 100%
+
+	//	background: linear-gradient(45deg, $blue, $blue - 100)
+
+//	background-image: url("../img/1.jpg")
+//	background-position: center center
+//	background-size: cover
+	
+.level-2
+	width: 100%
+	height: 100%
+	min-height: 100%
+
+
+	
+	//	background-image: url("../img/2.jpg")
+	//	background-size: cover
+
+	
+	
+.level-3
+	width: 100%
+	height: 100%
+	min-height: 100%
+	+bg($red)
+	top: 0
+	//	background-image: url("../img/3.jpg")
+	//	background-size: cover
+	+z(999)
+
+	
+.level-4
+	width: 100%
+	height: 100%
+	
+.level-5
+	width: 100%
+	height: 100%
+		
+.level-6
+	+co($blue)
+	+bg(white)
+	padding: 15px 20px 0
+	+radius-custom(0,10px, 10px, 0)	
+	position: fixed
+	left: 0px
+	+z(9999)
+
+
+
+.drop
+
+	.block
+		padding: 10px $i
+		+bg($blue + 10 $i)
+		h2
+			font-size: 16px $i
+			font-family: $font3 $i
+			margin: 0 $i
+
+#easing 
+	top: 10%
+	width: 50%
+	z-index: 101
+
+/*@SITE*/
+
+/*@layout*/
+
+.wrapper
+	+page
+
+/*@Header*/
+
+//header
+//	+fixed
+//	+w100
+//	+bg($green)
+//	padding: 10px 0 0
+//	+z(999)
+//	.wrapper
+//		+box
+//		+space
+
+//*
+//	+b1
+
+.logo
+	+white
+	+tCenter
+	+relative
+	p
+		+co(white)
+		+inline
+		font-size: 0
+	span
+		+tLeft
+		+fs(10)
+		+white
+		+cero
+		+inline-block
+	.slogan
+		+tRight
+		padding: 0 40px 0 0
+		+fs(6)
+		margin: -10px 0 0 0
+		font-size: $font3
+
+	.opendiv,
+	.closediv
+		+co($yellow)
+		margin: 4px 0 0
+
+.scroll-down
+	+size(80px)
+	+z(99999)
+	+bg($blue + 20)
+	border: 6px solid $yellow
+	+radius(100%)
+	bottom: 50px
+	right: 10px
+	+tCenter
+	+fs(2.2)
+	animation: bounce cubic-bezier(0.455, 0.03, 0.515, 0.955) 2s infinite alternate
+	transform-origin: 50% 50%
+	i
+		+co($yellow)
+		+mt(-3px)
+		+relative
+		+w100
+		+left
+	p
+		+fs(1.6, 100%)
+		+co(white)
+		+block
+		+w100
+		font-size: $font2
+		+fw(300)
+		+left
+
+.pc-pic
+	width: 400px
+	height: 305px
+	background-image: url("../img/pc.png")
+	background-size: cover
+
+.tablet-pic
+	width: 150px
+	height: 192px
+	background-image: url("../img/tablet.png")
+	background-size: cover
+	
+.mobil-pic
+	width: 80px
+	height: 157px
+	background-image: url("../img/mobil.png")
+	background-size: cover
+
+	
+nav
+	+z(9999 $i)
+	+w100
+	+bgBlack(.1)
+	h2
+		+none
+	ul
+		+box
+		+space
+		li
+			margin: 0 $i
+			padding: 0 $i
+			+noList
+			flex: 1
+			a
+				+fs(3, 100%)
+				+co(white)
+				+block
+				+tCenter
+				+transition(.6s)
+				+relative
+				padding: 10px
+				+noUnder
+			a.active
+				+co(white $i)
+				+noUnder
+				//				+before
+				//					+content('')
+				//					+bot-left(0, 0)
+				//					+bg(white)
+				//					+size(2rem)
+				//				+hover
+				//					+co(yellow)
+				//				i
+				//					font-size: 1.6rem $i
+				//					+mr(7px)
+				//					line-height: .1em $i
+
+/**/
+
+//body.logged-in
+//	+mt(30px)
+
+aside
+	+none
+
+.front .admin-menu-position-fixed
+	+none
+
+html body.admin-menu.front 
+	margin-top: 0px !important

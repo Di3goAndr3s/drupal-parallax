@@ -1,0 +1,35 @@
+name = Parallax
+description = Parallax Theme with Flex Grid
+version = 1.0
+core = 7.x
+
+regions[header] = 'Header'
+regions[menu] = 'Menú'
+regions[about-us-txt] = 'About Us Text'
+regions[about-us-img] = 'About Us IMG'
+
+regions[level-1] = 'Level 1'
+regions[level-2] = 'Level 2'
+regions[level-3] = 'Level 3'
+regions[level-4] = 'Level 4'
+regions[level-5] = 'Level 5'
+regions[level-6] = 'Level 6
+regions[level-7] = 'Level 7'
+regions[content] = 'content' 
+regions[footer] = 'Footer'
+
+; Stylesheets
+
+stylesheets[all][] = assets/css/lib/font-awesome.min.css
+stylesheets[all][] = assets/css/lib/fixed-positioning.css
+stylesheets[all][] = assets/css/main.css
+
+; Scripts
+scripts[] = assets/js/lib/modernizr.min.js
+scripts[] = assets/js/lib/skrollr.min.js
+scripts[] = assets/js/main.js
+
+
+
+
+
