@@ -15,6 +15,7 @@ body
 	+bg($gray-light)
 	height: 400px
 
+
 /*level-1*/
 .level-1
 	width: 100%
@@ -43,11 +44,12 @@ body
 	width: 100%
 	height: 100%
 	min-height: 100%
-	+bg($red)
+	+bg($yellow)
 	top: 0
 	//	background-image: url("../img/3.jpg")
 	//	background-size: cover
 	+z(999)
+	
 
 	
 .level-4
@@ -90,6 +92,9 @@ body
 
 .wrapper
 	+page
+	height: 100%
+	+b5
+//	+noScroll
 
 /*@Header*/
 
@@ -110,10 +115,13 @@ body
 	+white
 	+tCenter
 	+relative
-	p
+	div.div
 		+co(white)
-		+inline
+		+block
 		font-size: 0
+	
+		+cero
+		+b2
 	span
 		+tLeft
 		+fs(10)
@@ -150,7 +158,7 @@ body
 		+relative
 		+w100
 		+left
-	p
+	div
 		+fs(1.6, 100%)
 		+co(white)
 		+block
@@ -229,3 +237,128 @@ aside
 
 html body.admin-menu.front 
 	margin-top: 0px !important
+
+.about-us
+	h2
+		+tCenter
+		+w100
+		+centered(40px, 0px)
+
+
+
+.about-us-txt
+	width: 640px
+	height: 360px
+	top: 140px
+
+
+.about-us-img
+
+	width: 400px
+	height: 380px
+	top: 120px
+	border: 4px solid white
+	img
+		+s100
+
+
+
+
+.about-us-link
+	width: 640px
+	+bb(thin solid white)
+	+tRight
+	top: 450px
+	a
+		+white
+		+fs(3, 100%, 400)
+		+noUnder
+
+#admin-menu
+	width: 80px
+	height: 80px
+	+noScroll
+	bottom: 0
+	top: $in
+
+.bg-title
+	top: 120px
+	width: 800px
+	height: 380px
+
+.skills
+	h2
+		+w100
+		top: 40px
+	article
+		width: 300px
+		height: 400px
+		top: 120px
+		+bg(white)
+		+radius(4px)
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), 0 0 10px rgba(0, 0, 0, .22), 0 2px 10px rgba(0, 0, 0, .3)
+		
+		
+		+nth1
+			left: 40px
+
+		+nth2
+			left: 380px
+
+		+nth3
+			left: 720px
+
+		figure
+			+size(100px)
+			+radius(100%)
+			+bg(white)
+			border: 5px solid $gray-light
+			+inline-block
+			margin: 10px 0 10px 20px
+			img
+				+size(60px)
+				margin: 15px
+		h1
+			+co($white)
+			+fs(3, 100%, 700)
+			+radius-custom(4px, 4px, 0,0)
+			+upper
+			+tCenter
+			+w100
+			+bg($orange)
+			padding: 10px 20px
+
+		p 
+			+fs(1.4, 150%, 300)
+			+co($gray)
+			padding: 0 20px
+		ul
+			+fs(1.4, 100%, 300)
+			+co($gray)
+			padding: 0 20px
+			i
+				+co($green-light)
+				+mr(5px)
+		.skill-bar
+			width: 140px
+			height: 30px
+			+inline-block
+			+right
+			+mt(40px)
+			+mr(20px)
+			+radius(8px)
+			+relative
+			border: thin solid $gray-light
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), 0 0 10px rgba(0, 0, 0, .22), inset 0 2px 10px rgba(0, 0, 0, .3)
+			span
+				+block
+				+radius(8px)
+				+bg($gray-light)
+				width: 90%
+				height: 26px
+				+top-left(1px, 1px)
+				background-color: gray
+				background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px)
+				
+				
+
